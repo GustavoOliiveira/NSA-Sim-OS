@@ -1,0 +1,110 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.file-list {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.file-list thead th {
+  text-align: center;
+  padding: 15px;
+  background-color: #1f1f1f;
+  color: #ddd;
+  border-bottom: 2px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-size: 14px;
+}
+
+.file-list tbody tr {
+  border-bottom: 1px solid #333;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.file-list tbody tr:hover {
+  background-color: #333;
+}
+
+.file-list td {
+  text-align: center;
+  padding: 12px;
+}
+
+.file-list td img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.file-list td img:hover {
+  transform: scale(1.1);
+}
+
+.file-preview {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding: 20px;
+}
+
+.file-preview img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.file-preview .close-btn {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  color: #e0e0e0;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.file-preview .close-btn:hover {
+  color: #f44336;
+}
+
+@media (max-width: 768px) {
+  .file-list thead th,
+  .file-list td {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .file-list td img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/src/assets/favIcon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/src/assets/favIcon/favicon.svg" />
+  <link rel="shortcut icon" href="/src/assets/favIcon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favIcon/apple-touch-icon.png" />
+  <link rel="manifest" href="/src/assets/favIcon/site.webmanifest" />
+  <title>NSA Sim OS</title>
+  <link rel="stylesheet" href="/src/assets/style/SO.css">
+  <link rel="stylesheet" href="https://unpkg.com/winbox/dist/css/winbox.min.css">
+</head>
+<body>
+  <div class="shutdown-menu" id="shutdownMenu">
+    <button id="shutdownButton">Exit</button>
+  </div>  
+  <iframe class="setup" src="/src/pages/SETUP.html" frameborder="0"></iframe>
+  <div class="desktop" id="desktop">
+    <div id="loadingScreen">
+        <img src="/src/assets/icons/Infinity.gif" alt="Carregando...">
+    </div>
+    <div class="icon" id="iconExplorer" style="left: 100px; top: 100px;">
+      <img src="/src/assets/icons/pasta.png">
+      <span>Docs</span>
+    </div>
+    <div class="icon" id="iconNotepad" style="left: 200px; top: 100px;">
+      <img src="/src/assets/icons/arquivo.png">
+      <span>IDE</span>
+    </div>
+    <div class="icon" id="iconBrowser" style="left: 300px; top: 100px;">
+      <img src="/src/assets/icons/zumbi.png">
+      <span>Zombie</span>
+    </div>
+    <div class="icon" id="iconMusic" style="left: 400px; top: 100px;">
+      <img src="/src/assets/icons/music.png">
+      <span>Music</span>
+    </div>
+    <div class="icon" id="iconGlobe" style="left: 500px; top: 100px;">
+      <img src="/src/assets/icons/globo.png">
+      <span>Radiation</span>
+    </div>    
+    <div class="icon" id="iconYouTube" style="left: 600px; top: 100px;">
+      <img src="/src/assets/icons/camera.png">
+      <span>Cam</span>
+    </div>
+    <div class="icon" id="iconMiner" style="left: 700px; top: 100px;">
+      <img src="/src/assets/icons/wallet.png">
+      <span>Bitcoin Miner</span>
+    </div>
+    <div class="icon" id="iconZombieHunter" style="left: 800px; top: 100px;">
+      <img src="/src/assets/icons/mala.png">
+      <span>BodyCamera <br> Shooter</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="taskbar">
+    <div class="start-menu" id="startButton">
+      <img src="/src/assets/icons/hackerLogo.png">
+    </div>
+    <div class="task-icons" id="taskIcons"></div>
+    <div class="clock" id="clock"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/globe.gl"></script>
+  <script src="https://unpkg.com/winbox/dist/js/winbox.min.js"></script>
+  <script src="/src/assets/script/SO.js"></script>
+</body>
+</html>

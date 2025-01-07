@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: #319897;
+    font-family: "Courier New", Courier, monospace;
+    overflow: hidden;
+  }
+  
+  .login-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/src/assets/icons/telapcnew.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #319897;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .headerLogin {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .titleTouchId {
+    color: white;
+  }
+  
+  .logoHacker {
+    width: 17rem;
+  }
+  
+  .bodyLogin {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+  }
+  
+  .login-screen h2 {
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-form input {
+    background: transparent;
+    border: 2px solid #319897;
+    color: #319897;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    font-size: 18px;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    color: white;
+  }
+  
+  input::placeholder {
+    color: white;
+  }
+  
+  .login-form button {
+    background: transparent;
+    border: 2px solid #319897;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .login-form button:hover {
+    background: #319897;
+    color: black;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  @keyframes scan-animation {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+  
+  .loading-screen,
+  .code-cascade {
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loading-message {
+    position: absolute;
+    top: 40%;
+    font-size: 18px;
+    text-align: center;
+    animation: fadeInOut 1.5s ease-in-out infinite;
+  }
+  
+  .loading-bar {
+    width: 70%;
+    height: 20px;
+    background: #1d5c5b;
+    border: 2px solid #319897;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .loading-bar-fill {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #319897, #2a8280);
+    animation: loading-animation 4s linear forwards;
+  }
+  
+  @keyframes fadeInOut {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes loading-animation {
+    to {
+      width: 100%;
+    }
+  }
+  
+  .code-cascade span {
+    position: absolute;
+    color: #319897;
+    font-size: 14px;
+    writing-mode: vertical-rl;
+    animation: fall linear;
+  }
+  
+  @keyframes fall {
+    0% {
+      top: -100%;
+      opacity: 1;
+    }
+    100% {
+      top: 100%;
+      opacity: 0;
+    }
+  }
+  
+  /*-------- scan------*/
+  .inspiration {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 12px;
+    color: #7f7f7f;
+  }
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    user-select: none;
+  }
+  .center svg.fingerprint path.clone {
+    transition: stroke-dashoffset 2s ease-out;
+    -webkit-animation: try 2.5s ease-out;
+    animation: try 2.5s ease-out;
+  }
+  .center svg.fingerprint.active {
+    transform: scale(0.97);
+  }
+  .center svg.fingerprint.active path.clone {
+    stroke-dashoffset: 0;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .scan,
+  .scan-success {
+    margin-top: 1rem;
+    font-size: 15px;
+    color: white;
+  }
+  .scan-success {
+    display: none;
+  }
+  .center .fingerprint {
+    width: 100px;
+    height: 100px;
+    overflow: visible;
+  }
+  .center.success .scan {
+    display: none;
+  }
+  .center.success .scan-success {
+    display: block;
+  }
+  @-webkit-keyframes try {
+    0%,
+    100% {
+      stroke-dashoffset: 178;
+    }
+    50% {
+      stroke-dashoffset: 100;
+    }
+  }
+  @keyframes try {
+    0%,
+    100% {
+      stroke-dashoffset: 178;
+    }
+    50% {
+      stroke-dashoffset: 100;
+    }
+  }
+  
