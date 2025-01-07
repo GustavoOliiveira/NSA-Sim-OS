@@ -9,27 +9,27 @@ const progressBar = document.querySelector(".progress-bar");
 const progress = document.querySelector(".progress");
 
 const songs = [{
-        src: "/src/assets/audio/track1.mp3",
+        src: "/docs/assets/audio/track1.mp3",
         name: "Dr. Abraham Sinkov Talks About his Move into the Cryptologic Field",
     },
     {
-        src: "/src/assets/audio/track2.mp3",
+        src: "/docs/assets/audio/track2.mp3",
         name: "Snippet from News Conference Held in Moscow Regarding Mitchell and Martin Defection",
     },
     {
-        src: "/src/assets/audio/track3.mp3",
+        src: "/docs/assets/audio/track3.mp3",
         name: "Brigadier General John Tiltman speaks about the TUNNY machine",
     },
     {
-        src: "/src/assets/audio/man-scream-121085.mp3",
+        src: "/docs/assets/audio/man-scream-121085.mp3",
         name: "soldier germany",
     },
     {
-        src: "/src/assets/audio/screaming-woman-in-the-basement.mp3",
+        src: "/docs/assets/audio/screaming-woman-in-the-basement.mp3",
         name: "Anastasia Ivanova",
     },
     {
-        src: "/src/assets/audio/horror-sound-monster-breath-189934.mp3",
+        src: "/docs/assets/audio/horror-sound-monster-breath-189934.mp3",
         name: "Zylar - Zone 51",
     },
 ];

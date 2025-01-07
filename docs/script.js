@@ -102,28 +102,28 @@ windows[name] = win;
 let iconPath;
 switch (name) {
     case 'Docs':
-        iconPath = '/src/assets/icons/pasta.png';
+        iconPath = '/docs/assets/icons/pasta.png';
         break;
     case 'IDE':
-        iconPath = '/src/assets/icons/arquivo.png';
+        iconPath = '/docs/assets/icons/arquivo.png';
         break;
     case 'Zumbi':
-        iconPath = '/src/assets/icons/zumbi.png';
+        iconPath = '/docs/assets/icons/zumbi.png';
         break;
 	case 'Camera':
-		iconPath = '/src/assets/icons/camera.png';
+		iconPath = '/docs/assets/icons/camera.png';
 		break;
 	case 'Music':
-		iconPath = '/src/assets/icons/music.png';
+		iconPath = '/docs/assets/icons/music.png';
 		break;
 	case 'Globo':
-		iconPath = '/src/assets/icons/globo.png';
+		iconPath = '/docs/assets/icons/globo.png';
 		break;
 	case 'Bitcoin':
-		iconPath = '/src/assets/icons/wallet.png';
+		iconPath = '/docs/assets/icons/wallet.png';
 		break;
 	case 'Body Camera':
-		iconPath = '/src/assets/icons/mala.png';
+		iconPath = '/docs/assets/icons/mala.png';
 		break;
     default:
         iconPath = '/icons/default-icon.png'; // Ícone padrão
@@ -160,7 +160,7 @@ function setupIconDoubleClick(iconId, name, content) {
 
 setupIconDoubleClick('iconExplorer', 'Docs', () => {
 	const iframe = document.createElement('iframe');
-	iframe.src = '/src/pages/GALLERY.html'; 
+	iframe.src = '/docs/pages/GALLERY.html'; 
 	iframe.style.width = '100%';
 	iframe.style.height = '100%';
 	iframe.style.border = 'none';
@@ -174,7 +174,7 @@ setupIconDoubleClick('iconExplorer', 'Docs', () => {
 
 setupIconDoubleClick('iconNotepad', 'IDE', () => {
 	const iframe = document.createElement('iframe');
-	iframe.src = '/src/pages/IDE.html'; 
+	iframe.src = '/docs/pages/IDE.html'; 
 	iframe.style.width = '100%';
 	iframe.style.height = '100%';
 	iframe.style.border = 'none';
@@ -290,7 +290,7 @@ setupIconDoubleClick('iconYouTube', 'Camera', () => {
 
 setupIconDoubleClick('iconMusic', 'Music', () => {
 	const iframe = document.createElement('iframe');
-	iframe.src = '/src/pages/MUSIC.html'; 
+	iframe.src = '/docs/pages/MUSIC.html'; 
 	iframe.style.width = '100%';
 	iframe.style.height = '100%';
 	iframe.style.border = 'none';
