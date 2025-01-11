@@ -26,14 +26,11 @@ Habilidades aplicadas:
 
 Além de ser um exercício técnico, o projeto também é uma oportunidade de reflexão sobre temas éticos e morais em grandes organizações. 🧠
 
+🔗 [Clique aqui para acessar o site](https://nsa-simulator-os.netlify.app)
+
 ## 🖼️ Visual do Projeto
 
-![NSA SIM OS Screenshot](/fotos/gitHubView.png)
+![NSA SIM OS Screenshot](/docs/assets/icons/openApps.png)
+![NSA SIM OS Screenshot](/docs/assets/icons/lock.png)
+![NSA SIM OS Screenshot](/docs/assets/icons/home.png)
 
-> **Nota:** Substitua o `/fotos/gitHubView.png` pelo caminho correto da imagem quando disponível.
-
-## 🚀 Como Executar
-
-1. Clone este repositório:  
-   ```bash
-   git clone https://github.com/seu-usuario/nsa-sim-os.git
